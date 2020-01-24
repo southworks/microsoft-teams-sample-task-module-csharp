@@ -34,6 +34,10 @@ namespace Microsoft.Teams.Samples.TaskModule.Web.Helper
     {
         public static UIConstants YouTube { get; set; } =
             new UIConstants(1000, 700, "Microsoft Ignite 2018 Vision Keynote", TaskModuleIds.YouTube, "YouTube");
+
+        public static UIConstants MsStream { get; set; } =
+            new UIConstants(1000, 700, "Recognizers-Text | Issues", TaskModuleIds.MsStream, "MsStream");
+
         public static UIConstants PowerApp { get; set; } =
             new UIConstants(720, 520, "PowerApp: Asset Checkout", TaskModuleIds.PowerApp, "Power App");
         public static UIConstants CustomForm { get; set; } =
@@ -63,6 +67,7 @@ namespace Microsoft.Teams.Samples.TaskModule.Web.Helper
     public class TaskModuleIds
     {
         public const string YouTube = "youtube";
+        public const string MsStream = "msstream";
         public const string PowerApp = "powerapp";
         public const string CustomForm = "customform";
         public const string AdaptiveCard = "adaptivecard";

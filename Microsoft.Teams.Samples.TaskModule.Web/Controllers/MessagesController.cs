@@ -100,6 +100,10 @@ namespace Microsoft.Teams.Samples.TaskModule.Web.Controllers
                     taskInfo.Url = taskInfo.FallbackUrl = ApplicationSettings.BaseUrl + "/" + TaskModuleIds.YouTube;
                     SetTaskInfo(taskInfo, TaskModuleUIConstants.YouTube);
                     break;
+                case TaskModuleIds.MsStream:
+                    taskInfo.Url = taskInfo.FallbackUrl = ApplicationSettings.BaseUrl + "/" + TaskModuleIds.MsStream;
+                    SetTaskInfo(taskInfo, TaskModuleUIConstants.MsStream);
+                    break;
                 case TaskModuleIds.PowerApp:
                     taskInfo.Url = taskInfo.FallbackUrl = ApplicationSettings.BaseUrl + "/" + TaskModuleIds.PowerApp;
                     SetTaskInfo(taskInfo, TaskModuleUIConstants.PowerApp);

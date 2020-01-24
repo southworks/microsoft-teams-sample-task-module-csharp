@@ -262,10 +262,12 @@
     <Content Include="Views\Home\CustomForm.cshtml" />
     <Content Include="Views\Home\Configure.cshtml" />
     <Content Include="Resources\Cards\AdaptiveCard.json" />
+    <None Include="Properties\PublishProfiles\msteamsvideobot - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\taskmodulecsharpdemo - Web Deploy.pubxml" />
     <Content Include="Views\Home\YouTube.cshtml" />
     <Content Include="Views\Shared\_EmbedPage.cshtml" />
     <Content Include="Views\Home\PowerApp.cshtml" />
+    <Content Include="Views\Home\MsStream.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
