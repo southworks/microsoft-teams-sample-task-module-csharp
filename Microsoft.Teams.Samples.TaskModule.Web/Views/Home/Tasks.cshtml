@@ -7,8 +7,12 @@
 </p>
 <p>
     Let's try it out!
+
+    Reloaded.
+
     <div style="text-align: center; margin-left: auto; margin-right: auto;">
         <button class="button-primary" onclick="submit('youtube');">YouTube</button>
+        <button class="button-primary" onclick="submit('msstream');">MsStream</button>
         <button class="button-primary" onclick="submit('powerapp');">PowerApp</button>
         <p></p>
         <button class="button-primary" onclick="submit('customform');">Custom Form (results &rarr; tab)</button>
@@ -52,6 +56,12 @@
                 taskInfo.title = "@(TaskModuleUIConstants.YouTube.Title)";
                 taskInfo.height = "@(TaskModuleUIConstants.YouTube.Height)";
                 taskInfo.width = "@(TaskModuleUIConstants.YouTube.Width)";
+            }
+            else if (type.includes('msstream')) {
+                taskInfo.url = "@(ApplicationSettings.BaseUrl)" + "/msstream";
+                taskInfo.title = "@(TaskModuleUIConstants.MsStream.Title)";
+                taskInfo.height = "@(TaskModuleUIConstants.MsStream.Height)";
+                taskInfo.width = "@(TaskModuleUIConstants.MsStream.Width)";
             }
             else if (type.includes('powerapp')) {
                 taskInfo.url = "@(ApplicationSettings.BaseUrl)" + "/powerapp";
